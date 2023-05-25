@@ -12,4 +12,5 @@ sealed class HomeMusicUIState {
     data class Success(var result:ResponseEntity<List<Song>>):HomeMusicUIState()
     data class Fail(var result:ResponseEntity<List<Song>>):HomeMusicUIState()
     object Init:HomeMusicUIState()
+    //master分支
 }
