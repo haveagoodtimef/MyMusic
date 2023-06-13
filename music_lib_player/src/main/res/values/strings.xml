@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mingzi">pause</string>
+    <string name="notification_channel">com.example.android.uamp.media.NOW_PLAYING</string>
+    <string name="notification_channel_description">notification_channel_description</string>
+
+</resources>

@@ -1,7 +1,7 @@
 package com.fhz.mvvm.dataSource.retrofit
 
 import com.fhz.module_main.api.FengServerApi
-import com.fhz.music_home.entity.Song
+import com.fhz.music_lib_common.entity.Song
 import com.fhz.mvitest.entity.ResponseEntity
 import javax.inject.Inject
 

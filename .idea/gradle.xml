@@ -4,6 +4,7 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -12,9 +13,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/music-automotive" />
             <option value="$PROJECT_DIR$/music_home" />
             <option value="$PROJECT_DIR$/music_lib_common" />
             <option value="$PROJECT_DIR$/music_lib_network" />
+            <option value="$PROJECT_DIR$/music_lib_player" />
+            <option value="$PROJECT_DIR$/music_lib_xmpp" />
           </set>
         </option>
       </GradleProjectSettings>

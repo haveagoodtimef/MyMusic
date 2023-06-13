@@ -4,11 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.fhz.loginmvvm.util.Cons
 import com.fhz.music_home.dao.SongDao
-import com.fhz.music_home.entity.Song
+import com.fhz.music_lib_common.entity.Song
 
 /**
  * 时间:2023/3/28

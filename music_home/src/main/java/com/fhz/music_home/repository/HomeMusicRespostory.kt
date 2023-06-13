@@ -1,9 +1,12 @@
 package com.fhz.music_home.repository
 
-import com.fhz.music_home.entity.Song
+import android.content.Context
+import com.fhz.music_lib_common.entity.Song
 import com.fhz.mvitest.entity.ResponseEntity
 import com.fhz.mvvm.dataSource.local.HomeMusicLocalDataSource
+import com.fhz.mvvm.dataSource.local.HomeMusicSdCardDataSource
 import com.fhz.mvvm.dataSource.retrofit.HomeMusicListRemoteDataSource
+import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 /**
@@ -14,7 +17,8 @@ import javax.inject.Inject
  */
 class HomeMusicRespostory @Inject constructor (
     private val homeMusicLocalDataSource: HomeMusicLocalDataSource,
-    private val homeMusicRemoteDataSource:HomeMusicListRemoteDataSource
+    private val homeMusicRemoteDataSource:HomeMusicListRemoteDataSource,
+    private val homeMusicSdCardDataSource: HomeMusicSdCardDataSource,
     ){
 
     suspend fun getMusicAll() : ResponseEntity<List<Song>> {
@@ -22,5 +26,9 @@ class HomeMusicRespostory @Inject constructor (
     }
 
 
+
+    suspend fun getMusicFromSdCard() : List<Song> {
+        return homeMusicSdCardDataSource.getMusicFromSD()
+    }
 
 }

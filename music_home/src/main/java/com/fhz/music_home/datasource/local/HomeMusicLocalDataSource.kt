@@ -1,7 +1,7 @@
 package com.fhz.mvvm.dataSource.local
 
 import com.fhz.music_home.dao.SongDao
-import com.fhz.music_home.entity.Song
+import com.fhz.music_lib_common.entity.Song
 import javax.inject.Inject
 
 /**
