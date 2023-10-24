@@ -40,7 +40,6 @@ class HomeMusicListViewModel @Inject constructor(
                     is HomeMusicIntent.PlayForUri -> playForUri(it)
                     is HomeMusicIntent.GetMusicListFormSD -> getMusicFromSdCard()
                     is HomeMusicIntent.PlayAll -> playAll(it)
-                    else -> {}
                 }
             }
         }
